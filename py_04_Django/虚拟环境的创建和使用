@@ -1,0 +1,27 @@
+安装虚拟环境
+1）sudo pip install virtualenv # 安装虚拟环境
+
+2）sudo pip install virtualenvwrapper #安装虚拟环境扩张包
+
+3）编辑 Home目录下的.bashrc文件, 添加以下
+export WORKON_HOME=$HOME/.virtualenvs
+source /usr/local/bin/virtualenvwrapper.sh
+
+4）使用source .bashrc 使其生效
+	创建虚拟环境命令
+	mkvirtualenv -p python3 xxxx #虚拟环境名称
+
+5）workon XXXX
+	workon TABTAB #查看所有虚拟环境
+
+6) 退出虚拟环境 deactivate
+
+7) rmvirtualenv xxxx #删除虚拟环境
+
+8) pip list #查看虚拟环境已安装包
+	pip freeze
+
+9）pip install django==1.8.0 #指定版本安装
+	在虚拟环境下安装包不能使用sudo
+
+	pip install python 包 VS apt-get install 软件
