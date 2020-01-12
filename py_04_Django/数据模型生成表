@@ -1,0 +1,30 @@
+数据模型生成表, 操作
+
+1）生成迁移文件
+	命令：python manage.py makemigrations
+
+2) 执行迁移生成表
+	python manage.py migrate
+
+3) 操作模型类 在命令行模式下
+	python manage.py shell
+
+	首先导入模型类
+	from booktest.models import BookInfo
+
+	向表中插入数据
+	b = BookInfo() # 定义一个bookinfo 对象
+
+	b.btitle="xxxxx"
+
+	b.save()
+
+	查询表中数据
+	b = BookInfo.objects.get(id=1)
+
+	删除表中数据
+	b.delete()
+
+	查询所有数据
+	BookInfo.objects.all()
+
