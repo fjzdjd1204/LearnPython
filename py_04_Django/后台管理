@@ -1,0 +1,20 @@
+后台管理 (M)
+
+1) 本地化
+	时区和语言的设立， 修改setting.py
+
+2) 创建管理员
+	python manage.py createsuperuser
+
+3) 启动管理平台
+	python manage.py runserver
+
+4) 注册模型类
+	在应用下的admin.py 中楚策模型类
+
+	通知Django 框架根据注册的模型来生成对应表管理页面
+
+	控制台显示内容，重写 def __str__(self)方法
+
+5) 自定义管理页面
+	admin.py

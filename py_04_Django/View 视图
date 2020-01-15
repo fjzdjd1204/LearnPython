@@ -1,0 +1,48 @@
+View 视图
+
+视图函数 view.py
+
+def xxx():
+	return HttpResponse()
+
+urls.py 创建
+严格匹配开头和结尾, 正则表达式
+
+创建模板文件夹
+templates
+
+配置模板目录
+>>>settings.py
+TEMPLATES = [
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': [os.path.join(BASE_DIR, 'templates')], # 设置模板目录
+        'APP_DIRS': True,
+        'OPTIONS': {
+            'context_processors': [
+                'django.template.context_processors.debug',
+                'django.template.context_processors.request',
+                'django.contrib.auth.context_processors.auth',
+                'django.contrib.messages.context_processors.messages',
+            ],
+        },
+    },
+]
+
+使用模板文件
+	1, 加载模板文件
+
+
+ 	2，定义上下文 
+
+
+ 	3，模板渲染
+ 	
+
+
+
+
+
+
+
+
