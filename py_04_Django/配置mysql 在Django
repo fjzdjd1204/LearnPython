@@ -1,0 +1,24 @@
+配置mysql 在Django
+
+修改setting.py 中的DATABASES
+DATABASES = {
+    'default': {
+        # 'ENGINE': 'django.db.backends.sqlite3',
+        # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'bj18',
+        'USER': 'root',
+        'PASSWORD': 'password',
+        'HOST': 'localhost',  # 制定mysql数据库所在地址
+        'PORT': 3306,
+    }
+}
+
+启动服务器需要安装mysql 在虚拟环境
+ 	pip install pymysql
+ 	# after installed, config test2/__init__.py file adding content:
+ 	import pymysql
+ 	pymysql.version_info = (1, 3, 13, 'final',0)
+ 	pymysql.install_as_MySQLdb()
+
+
