@@ -9,6 +9,9 @@ class BookInfo(models.Model):
     # publish date
     bpub_date = models.DateField()
 
+    def __str__(self):
+        #返回书名
+        return self.btitle
 
 # test file
 class HeroInfo(models.Model):
@@ -20,3 +23,7 @@ class HeroInfo(models.Model):
     hcomment = models.CharField(max_length=128)
 
     hbook= models.ForeignKey('BookInfo', on_delete=models.CASCADE)
+
+    def __str__(self):
+        #返回书名
+        return self.hname
