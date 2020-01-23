@@ -1,0 +1,11 @@
+视图 view
+
+1, function of View
+	reture html HttpResponse, or redicrect
+
+2, how to use View
+	define view function
+
+	config url
+
+	

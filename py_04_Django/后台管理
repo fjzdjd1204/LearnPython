@@ -11,6 +11,7 @@
 
 4) 注册模型类
 	在应用下的admin.py 中楚策模型类
+	admin.site.register(XXXX)
 
 	通知Django 框架根据注册的模型来生成对应表管理页面
 
