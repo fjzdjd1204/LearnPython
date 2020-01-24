@@ -1,0 +1,17 @@
+
+django-admin startproject xxx #创建项目
+
+ manage.py 项目管理文件
+
+	__init__.py:说明test1是个python包
+
+	settings.py:项目配置文件
+
+	urls.py: url路由
+
+	wsgi.py: wsgi协议，web服务器交互入口
+
+1) Django 每一个功能对应一个应用
+	python manage.py startapp xxxx #创建应用
+
+	
