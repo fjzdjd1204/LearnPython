@@ -1,0 +1,9 @@
+05 视图view 登录案例
+	post 提交的信息存在
+		request.post
+	get 提交的信息存在
+		request.get
+
+静态文件保存需要在工程目录下新建一个static目录
+然后在setting里设置 
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')] 
